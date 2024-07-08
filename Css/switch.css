@@ -1,0 +1,36 @@
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFC0C0;
+    border-radius: 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 5px;
+    bottom: 5px;
+    background-color: #66CCFF;
+    border-radius: 50%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+input:checked + .slider {
+    background-color: #66CCFF;
+}
+
+input:checked + .slider:before {
+    background-color: #FFC0C0;
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    -o-transform: translateX(25px);
+    transform: translateX(25px);
+}

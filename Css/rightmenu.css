@@ -1,0 +1,95 @@
+/* 右键菜单样式 */
+.ring {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(0.1) rotate(-270deg);
+    -moz-transform: scale(0.1) rotate(-270deg);    
+    -o-transform: scale(0.1) rotate(-270deg);
+    transform: scale(0.1) rotate(-270deg);
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+/* 右键菜单下各个选项的样式 */
+.ring a {
+    display: inline-block;
+    color: #FFFFFF;
+    filter: Glow(color=#DC965A, strength=1);
+    -webkit-text-shadow: #DC965A 1px 0 0, #DC965A 0 1px 0, #DC965A -1px 0 0, #DC965A 0 -1px 0;
+    -moz-text-shadow: #DC965A 1px 0 0, #DC965A 0 1px 0, #DC965A -1px 0 0, #DC965A 0 -1px 0;
+    text-shadow: #DC965A 1px 0 0, #DC965A 0 1px 0, #DC965A -1px 0 0, #DC965A 0 -1px 0;
+}
+
+/* 鼠标悬停时右键菜单下各个选项的样式 */
+.ring a:hover {
+    filter: Glow(color=#66CCFF, strength=1);
+    -webkit-text-shadow: #66CCFF 1px 0 0, #66CCFF 0 1px 0, #66CCFF -1px 0 0, #66CCFF 0 -1px 0;
+    -moz-text-shadow: #66CCFF 1px 0 0, #66CCFF 0 1px 0, #66CCFF -1px 0 0, #66CCFF 0 -1px 0;
+    text-shadow: #66CCFF 1px 0 0, #66CCFF 0 1px 0, #66CCFF -1px 0 0, #66CCFF 0 -1px 0;
+}
+
+/* 右键菜单下各个选项的图片，话说这玩意为什么不是从0开始数 */
+.ring a:nth-of-type(1) {
+    background-image: url("../Images/menu/001.jpg");
+}
+
+.ring a:nth-of-type(2) {
+    background-image: url("../Images/menu/002.jpg");
+}
+
+.ring a:nth-of-type(3) {
+    background-image: url("../Images/menu/003.jpg");
+}
+
+.ring a:nth-of-type(4) {
+    background-image: url("../Images/menu/004.jpg");
+}
+
+.ring a:nth-of-type(5) {
+    background-image: url("../Images/menu/005.jpg");
+}
+
+.ring a:nth-of-type(6) {
+    background-image: url("../Images/menu/006.jpg");
+}
+
+/* 右键菜单下各个选项的内容样式 */
+.ring-item {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #EEEEEE;
+    display: block;
+    line-height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    position: absolute;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-size: 80px;
+    border: 2px #B59494 solid;
+    -webkit-box-shadow: 0px 0px 15px #FFFFFF;
+    -moz-box-shadow: 0px 0px 15px #FFFFFF;
+    box-shadow: 0px 0px 15px #FFFFFF;
+}
+
+/* 右键菜单下各个选项的内容样式，鼠标悬停时发光 */
+.ring-item:hover {
+    -webkit-box-shadow: inset 0px 0px 80px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 80px #FFFFFF;
+    -o-box-shadow: inset 0px 0px 80px #FFFFFF;
+    box-shadow: inset 0px 0px 80px #FFFFFF;
+}

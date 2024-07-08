@@ -1,0 +1,92 @@
+/* 背景图片幻灯片放映样式 */
+/* 建议背景图片分辨率大于等于1920*1080，否则效果不佳 */
+.background {
+    width: 100%; /* 图片宽度100% */
+    height: 100%; /* 图片高度100% */
+    top: 0px; /* 与父元素顶部距离0像素 */
+    left: 0px; /* 与父元素左侧距离0像素 */
+    position: fixed; /* 固定位置 */
+    z-index: -2; /* 堆叠顺序-2，避免覆盖其它内容 */
+    /* margin-top: 100px; */
+}
+
+/* 作用不明 */
+/* .background:after {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: -2;
+    content: '';
+} */
+
+/* 各张背景图片样式 */
+.background li span {
+    width: 100%; /* 图片宽度100% */
+    height: 100%; /* 图片高度100% */
+    top: 0px; /* 与父元素顶部距离0像素 */
+    left: 0px; /* 与父元素左侧距离0像素 */
+    opacity: 0; /* 图片透明度为0，即完全不透明 */
+    z-index: -2; /* 堆叠顺序-2，避免覆盖其它内容 */
+    color: transparent; /* 文字颜色透明，作用不明 */
+    position: absolute; /* 定位方式为绝对定位，作用不明 */
+    background-size: cover; /* 背景图片自动适应容器，保持图片比例 */
+    background-image: url("../Images/background-error.jpg"); /* 如果图片加载不出来就放这张图片先盖着 */
+    background-repeat: none; /* 背景图片不重复，作用不明 */
+    background-position: 50% 50%; /* 背景图片水平垂直居中 */
+    -webkit-animation: imageAnimation 36s linear infinite 0s; /* 设置动画，Chrome浏览器及大部分浏览器 */
+    -moz-animation: imageAnimation 36s linear infinite 0s; /* 设置动画，Firefox浏览器 */
+    -ms-animation: imageAnimation 36s linear infinite 0s; /* 设置动画，IE浏览器 */
+    -o-animation: imageAnimation 36s linear infinite 0s; /* 设置动画，Opera浏览器 */
+    animation: imageAnimation 36s linear infinite 0s; /* 设置动画，默认浏览器 */
+}
+
+/* 各张背景图片动画延时，每张图间隔6s */
+.background li:nth-child(1) span {
+    -webkit-animation-delay: 0s; /* 设置动画延时为0s，Webkit浏览器 */
+    -moz-animation-delay: 0s; /* 设置动画延时为0s，Mozila浏览器 */
+    -ms-animation-delay: 0s; /* 设置动画延时为0s，IE浏览器 */
+    -o-animation-delay: 0s; /* 设置动画延时为0s，Opera浏览器 */
+    animation-delay: 0s; /* 设置动画延时为0s，默认 */
+}
+
+.background li:nth-child(2) span {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.background li:nth-child(3) span {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.background li:nth-child(4) span {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    animation-delay: 18s;
+}
+
+.background li:nth-child(5) span {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    animation-delay: 24s;
+}
+
+.background li:nth-child(6) span {
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    animation-delay: 30s;
+}

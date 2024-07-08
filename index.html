@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 设置网页标题 -->
+    <title>凝落的小房间</title>
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+    <!-- 收藏/书签页显示的图标 -->
+    <link rel="bookmark" href="./Images/favicon.ico" type="image/x-icon">
+    <!-- 预解析DNS，需要指定服务器 -->
+    <link rel='dns-prefetch' href='//localhost' />
+
+    <!-- 设置网页编码 -->
+    <meta charset="utf-8">
+    <!-- 设置referrer策略 -->
+    <meta name="referrer" content="no-referrer">
+    <!-- 控制页面缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- 禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <!-- 设置渲染引擎，IE已经被扫进历史的垃圾堆了，允悲 -->
+    <meta name="renderer" content="webkit">
+    <!-- 指定浏览器版本，用于兼容低版本浏览器 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 设置移动设备视口(自适应缩放) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置网页描述，给搜索引擎用 -->
+    <meta name="Author" contect="碧霄-凝落">
+    <meta name="Keywords" content="碧霄-凝落">
+    <meta name="Description" content="凝落的小房间">
+
+    <!-- 导入自定义脚本，拦截腾讯系软件 -->
+    <script type="text/javascript" src="./Scripts/AntiTencent.js"></script>
+    <!-- 导入脚本，各种乱七八糟的东西的前置库 -->
+    <script type='text/javascript' src="./Scripts/jquery/jquery.min.js"></script>
+    <!-- 导入脚本，图片延迟加载 -->
+    <script type='text/javascript' src='./Scripts/jquery/jquery.lazyload.min=1.9.3.js'></script>
+
+    <!-- 样式表，全局样式 -->
+    <link rel='stylesheet' id='mian-css' href='./Css/mian.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='miann-css' href='./Css/miann.css' type='text/css' media='all' />
+    <!-- 样式表，右键菜单 -->
+    <link rel='stylesheet' id='rightmenu-css' href='./Css/rightmenu.css' type='text/css' media='all' />
+    <!-- 样式表，背景图 -->
+    <link rel='stylesheet' id='background-css' href='./Css/background.css' type='text/css' media='all' />
+    <!-- 样式表，背景图放映的关键帧，不知道是什么 -->
+    <link rel='stylesheet' id='keyframes-css' href='./Css/keyframes.css' type='text/css' media='all' />
+    <!-- 样式表，指向元素时的提示框，有空再弄 -->
+    <link rel='stylesheet' id='hint-css' href='./Css/hint.css' type='text/css' media='all' />
+    <!-- 样式表，主题切换按钮 -->
+    <link rel='stylesheet' id='switch-css' href='./Css/switch.css' type='text/css' media='all' />
+
+</head>
+
+<!-- 网页主体内容 -->
+<body>
+    <!-- 网页标题栏 -->
+    <!-- 这东西在miann.css里，有点复杂，有空再看 -->
+    <header class="menu menu-two">
+        <div class="container">
+            <span>
+                <!-- 放logo -->
+            </span>
+            <!-- 这块在zan.js里 -->
+            <ul class="menu menu-three">
+                <li>
+                    <a href="https://ncgncg.top/">
+                        <i class="fancy">首页</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/BX-NL/" target="_blank">
+                        <i class="fancy">Github</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="fancy">项目目录</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-2">
+                            <a href="https://ncgncg.top/">汇总</a>
+                        </li>
+                        <li class="dropdown-2">
+                            <a>1~5</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdowndown" href="https://ncgncg.top/">1</a>
+                                </li>
+                                <li>
+                                    <a href="https://ncgncg.top/">2</a>
+                                </li>
+                                <li>
+                                    <a href="https://ncgncg.top/">3</a>
+                                </li>
+                                <li>
+                                    <a href="https://ncgncg.top/">4</a>
+                                </li>
+                                <li>
+                                    <a href="https://ncgncg.top/">5</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2">
+                            <a href="https://ncgncg.top/">其它</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="fancy">友情链接</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href='https://github.com/Beats0' target="_blank">Beats0</a>
+                        </li>
+                        <li>
+                            <a href="https://justinone.cn/" target="_blank">111</a>
+                        </li>
+                        <li>
+                            <a href="https://ciallo.cc/" target="_blank" class="hint--right" style="padding: 0px" data-hint="柚子厨真恶心">
+                                <img src="./Images/ciallo.gif" style="margin: 0px auto;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://firefly.march7th.online/" target="_blank">三月七</a>
+                        </li>
+                        <li>
+                            <a href="https://ncgncg.top/" target="_blank">广告位招租</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://ncgncg.top/">
+                        <i class="fancy">其它</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="fancy">游戏</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://ncgncg.top/" target="_blank">广告位招租</a>
+                        </li>
+                        <li>
+                            <a href="https://ncgncg.top/" target="_blank">广告位招租</a>
+                        </li>
+                        <li>
+                            <a href="https://ncgncg.top/" target="_blank">广告位招租</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 这里一坨 -->
+            <span>
+                <i class="fancy" style="font-size: 18px; color: #66CCFF;">普通模式</i>
+                <!-- 开关-切换背景模式 -->
+                <label style="position: relative; display: inline-block; width: 60px; height: 34px; margin: 10px 10px 10px auto;">
+                    <input type="checkbox" name="themeswitch" style="opacity: 0; width: 0; height: 0;" checked>
+                    <span class="slider"></span>
+                </label>
+                <i class="fancy" style="font-size: 18px; color: #66CCFF;">幻彩模式</i>
+            </span>
+        </div>
+    </header>
+    <!-- 这块在background.css里 -->
+    <ul class="background">
+        <!-- 下面这坨在background-A.js里 -->
+        <li>
+            <span class="image-1"></span>
+        </li>
+        <li>
+            <span class="image-2"></span>
+        </li>
+        <li>
+            <span class="image-3"></span>
+        </li>
+        <li>
+            <span class="image-4"></span>
+        </li>
+        <li>
+            <span class="image-5"></span>
+        </li>
+        <li>
+            <span class="image-6"></span>
+        </li>
+    </ul>
+    <!-- 右键菜单 -->
+    <!-- 这俩在rightmenu.js和rightmenu-start.js里 -->
+    <div class="rightmenu MenuDropDown">
+        <div class="circle" id="right">
+            <!-- 这块在rightmenu.css里 -->
+            <div class="ring">
+                <!-- 这坨在rightmenu.js里 -->
+                <a title="" class="ring-item" onclick="appreciationmode()">鉴赏模式</a>
+                <a title="" class="ring-item" href="https://ncgncg.top/">杂鱼</a>
+                <a title="" class="ring-item" href="https://ncgncg.top/">变态</a>
+                <a title="" class="ring-item" href="https://ncgncg.top/">笨蛋</a>
+                <a title="" class="ring-item" href="https://ncgncg.top/">傻瓜</a>
+                <a title="" class="ring-item" onclick="forcereload()">刷新页面</a>
+            </div>
+            <!-- 右键音效 -->
+            <audio id="audio" src="./Audio/Ding.mp3"></audio>
+        </div>
+    </div>
+    <!-- 底部的涩涩图 -->
+    <!-- overlay在mian.css里，js还不知道。mouse-none在mian.css里 -->
+    <!-- magnify在mian.css和winwinwin.js里，有空再拆，mouse-none在mian.css里 -->
+    <div id="overlay" class="magnify">
+        <!-- large与底部图有关，暂时不能删，image-H在background-H.js里 -->
+        <div class="large image-H"></div>
+        <!-- small一部分在mian.css里，与底部图有关，暂时不能删 -->
+        <img class="small" src="./Images/transparent.png">
+    </div>
+</body>
+
+<!-- 网页主体结构 -->
+<div class="container" style="padding: 30px;">
+    <!-- 这块东西在mian.css里 -->
+    <div class="markdown markdown-2x">
+        <!-- 这个在mian.css里 -->
+        <article class="well">
+            <!-- 这块是标题 -->
+            <!-- 这个在mian.css里 -->
+            <div class="path fancy" style="width: 100%">
+                <span>
+                    <a href="https://ncgncg.top/">主页</a>
+                </span>&gt;
+                <span>
+                    <a href="https://ncgncg.top/">上一页</a>
+                </span>&gt;
+                <span>
+                    <a>标题标题标题</a>
+                </span>
+            </div>
+            <!-- 这块在mian.css里 -->
+            <div style="padding: 10px 15px 0px 15px; font-size: 32px; margin: 0 auto; text-align: center;">
+                <!-- ?这个bigtitle可以删 -->
+                <a class="bigtitle">标题标题标题</a>
+            </div>
+            <div style="text-align: center; line-height: 24px; margin: 20px;">
+                <span class="label">三个字</span>
+                <span class="label">这里五个字</span>
+            </div>
+            <div>
+                <!-- board在mian.css里 -->
+                <blockquote class="board">
+                    <span style="font-size: 15pt; color:#3399CC">简介</span>
+                </blockquote>
+                <div style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; overflow: auto; color: #468847; background-color: #dff0d8; border-color: #d6e9c6;">
+                    111111111<br />
+                    &nbsp;<br />
+                    22222222<br />
+                    3333333<br />
+                </div>
+                <blockquote class="board">
+                    <span style="font-size: 15pt; color:#6699FF">图片</span>
+                </blockquote>
+                <div class="photo">
+                    <a class="highslide-image">
+                        <img title="" src="./Data/images/HomePage.jpg" alt="" width="720"/>
+                    </a>
+                </div>
+                <div class="photo">
+                    <a class="highslide-image" href="http://ncgncg.top:12345/#/" target="_blank">
+                        <img title="" src="./Data/images/FileCodeBox.jpg" alt="" width="720"/>
+                    </a>
+                </div>
+                <div class="photo">
+                    <a class="highslide-image">
+                        <img title="" src="./Data/images/test.jpg" alt="" width="720"/>
+                    </a>
+                </div>
+                <blockquote class="board">
+                    <span style="font-size: 15pt; color:#66CCFF">内容</span>
+                </blockquote>
+                <div class="luminous">
+                    <div style="padding: 15px;">
+                        <a class="hint--right" data-hint="你看什么看">
+                            <button type="button" class="btn" onclick="window.open('https://www.baidu.com/')">链接</button>
+                        </a>
+                    </div>
+                </div>
+                <div style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; overflow: auto; color: #3a87ad; background-color: #d9edf7; border-color: #bce8f1;">
+                    <span style="font-size: 15pt; color:#000000">这里有六个字</span>
+                </div>
+            </div>
+        </article>
+    </div>
+    <aside class="markdown markdown-1x">
+        <!-- 这坨在mian.css里 -->
+        <div class="search">
+            <form class="clearfix" method="get" action="https://ncgncg.top/">
+                <input class="inputbox" type="text" name="s" id="s" placeholder="我是一个文本框" />
+                <button type="submit" class="btn" name="submit">
+                    <i class="fancy"></i>
+                </button>
+            </form>
+        </div>
+    </aside>
+    <!-- 这块是sakana~，来自https://github.com/dsrkafuu/sakana-widget -->
+    <aside class="markdown">
+        <link rel="stylesheet" href="./Sakana-Widget/sakana.min.css"/>
+        <script async onload="initSakanaWidget()" src="./Sakana-Widget/sakana.min.js"></script>
+        <!-- 这个用来修改参数，包括更换图片 -->
+        <script type='text/javascript' src="./Scripts/sakana.js"></script>
+        <div id="sakana-widget"></div>
+    </aside>
+</div>
+
+<!-- 网页页脚 -->
+<!-- 这个在mian.css里 -->
+<footer>
+    <a>Ninglog</a>
+    <!-- 右下角按钮:返回顶部 -->
+    <button class="gotop">
+        <a style="color: #66CCFF;">↑</a>
+    </button>
+</footer>
+
+<!-- 导入脚本，配置背景图 -->
+<script type='text/javascript' src="./Scripts/background.js"></script>
+<!-- 导入脚本，一堆乱七八糟的功能 -->
+<script type='text/javascript' src='./Scripts/zan.js'></script>
+<!-- 导入脚本，奇思妙想的小功能，具体请阅读Readme.md -->
+<script type='text/javascript' src='./Scripts/something.js'></script>
+<!-- 导入脚本，右键菜单 -->
+<script type='text/javascript' src='./Scripts/rightmenu.js'></script>
+<!-- 导入脚本，用来看涩图的小框 -->
+<script type='text/javascript' src='./Scripts/winwinwin.js'></script>
+<!-- 导入脚本，输入时特效 -->
+<script type='text/javascript' src='./Scripts/powermode.js'></script>
+<script type='text/javascript' src='./Scripts/superplaceholder.js'></script>
+<!-- 导入脚本，框框自动打字 -->
+<script type="text/javascript" src="./Scripts/placeholder.js"></script>
+<!-- 导入脚本，输入时窗口抖动、打字特效等 -->
+<script type="text/javascript" src="./Scripts/inputstyle.js"></script>
+
+</html>

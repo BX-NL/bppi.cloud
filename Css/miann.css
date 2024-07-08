@@ -1,0 +1,540 @@
+/* 主框体 */
+.well {
+    min-height: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0px 5px #CCCCCC;
+    -moz-box-shadow: 0 0px 5px #CCCCCC;
+    box-shadow: 0 0px 5px #CCCCCC;
+}
+
+/* 通用字体样式 */
+.fancy {
+    display: inline-block;
+    font: normal normal normal 15px/1 SmileySans;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+}
+
+/* 二级标题栏 */
+.board {
+    border-color: #66CCFF;
+    background-color: rgba(255, 255, 255, 0.51);
+}
+
+/* 页面路径 */
+.path {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+/* 以下为输入框的样式 */
+.markdown {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+@media (min-width: 992px) {
+
+    .markdown-1x {
+        width: 33.33333333333333%;
+    }
+
+    .markdown-2x {
+        width: 66.66666666666666%;
+    }
+}
+
+.inputbox {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 1.428571429;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    border-color: #39C5BB;
+    outline: 0;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(238, 88, 83, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(238, 88, 83, 0.6);
+}
+
+/* 以下为标题栏的样式 */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container:before, .container:after {
+    display: table;
+    content: " ";
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 749px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* 以下为搜索框的样式 */
+.search {
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: rgba(10, 10, 0, 0.7);
+}
+
+.search input[type="text"] {
+    width: 85%;
+    float: left;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.search input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 255);
+    -webkit-box-shadow: 0px 0px 50px black;
+    -moz-box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 50px black;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .search input[type="text"] {
+        width: 82%;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .search input[type="text"] {
+        width: 93%;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 767px) {
+    .search input[type="text"] {
+        width: 82%;
+        background-color: transparent;
+    }
+}
+
+.search button {
+    float: left;
+    margin-top: 2px;
+}
+
+/* 以下为标题栏样式 */
+.navbar {
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.dropdown-2 {
+    position: relative;
+}
+
+.dropdown-2 .dropdown-menu {
+    left: 100%;
+    top: 0;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #66CCFF !important;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* 大标题 */
+/* .bigtitle {
+    color: #000000;
+}
+
+.bigtitle:hover {
+    color: #39C5BB;
+    text-decoration: none;
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+} */
+
+/* 以下为图片栏的图片 */
+.photo {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    z-index: 10;
+}
+
+.photo:hover {
+    z-index: 50;
+    transform: scale(1.5) rotate(0deg);
+    -ms-transform: scale(1.5) rotate(0deg);
+    -webkit-transform: scale(1.5) rotate(0deg);
+}
+
+.photo img {
+    margin: 10px auto;
+    display: block;
+}
+
+/* 以下为返回顶部按钮 */
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgba(10, 10, 0, 0.7);
+    top: auto;
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+    color: white;
+}
+
+.gotop a {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+}
+
+.gotop a:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* 框框，附带发光效果 */
+.luminous {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0px 5px #CCCCCC;
+    -moz-box-shadow: 0 0px 5px #CCCCCC;
+    box-shadow: 0 0px 5px #CCCCCC;
+}
+
+.luminous:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 50px black;
+    -moz-box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 50px black;
+}
+
+/* 以下是按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover, .btn:focus {
+    color: #333333;
+    text-decoration: none;
+}
+
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* 以下是搜索框的背景，暂时没法删，有空处理 */
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* 底部的涩涩图用，winwinwin.js里也有 */
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    top: 0;
+    background: url("") no-repeat fixed center center rgba(0, 0, 0, 0.5);
+    cursor: url('../Images/mouse/mouse-3.cur'), url(../Images/mouse/mouse-3.cur), auto;
+    display: none;
+    z-index: 1000001;
+    opacity: 1;
+}
+
+.magnify {
+    width: 2000px;
+    position: relative;
+}
+
+.large {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    border-radius: 100%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    background: url('../Images/transparent.png') no-repeat;
+    display: none;
+}
+
+/* 以下为大标题下的小标签 */
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: rgba(10, 10, 0, 0.7);
+}
+
+.label:hover {
+    background-color: #66CCFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* 以下为右键菜单相关 */
+.rightmenu {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: fixed;
+    font-size: 14px;
+    z-index: 1000002;
+}
+
+.circle {
+    height: 300px;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.open .ring {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+/* 不知道有什么用 */
+/* .small {
+    max-width: initial;
+    max-height: initial;
+    opacity: 0;
+} */
+
+.menu {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu:before, .menu:after {
+    display: table;
+    content: " ";
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu > li {
+    position: relative;
+    display: block;
+}
+
+.menu > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu > li > a:hover, .menu > li > a:focus {
+    text-decoration: none;
+    background-color: #d9534f;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.menu-three {
+    margin: 7.5px -15px;
+    float: left;
+    margin: 0;
+}
+.menu-three > li {
+        float: left;
+    }
+.menu-three > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.menu-two {
+    border-color: #080808;
+    background-color: rgba(10, 10, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 8px black;
+    -moz-box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 8px black;
+    -moz-transition: background-color .5s ease-in-out, box-shadow .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, box-shadow .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, box-shadow .5s ease-in-out;
+    transition: background-color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.menu-two .menu-three > li > a {
+    color: #FFFFFF;
+}
+
+.menu-two .menu-three > li > a:hover, .menu-two .menu-three > li > a:focus {
+    color: #FFFFFF;
+    background-color: rgba(100, 90, 200, 0.7);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.menu-two .menu-three > .open > a, .menu-two .menu-three > .open > a:hover, .menu-two .menu-three > .open > a:focus {
+    color: #ffffff;
+    background-color: rgba(100, 90, 200, 0.7);
+}
+
+@media (max-width: 767px) {
+    .menu-two .menu-three .open .dropdown-menu > li > a {
+        color: #000000;
+    }
+
+    .menu-two .menu-three .open .dropdown-menu > li > a:hover, .menu-two .menu-three .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+        background-color: transparent;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.open > .dropdown-menu {
+    display: block;
+}
+
+/* .open > a {
+    outline: 0;
+} */
