@@ -1,10 +1,25 @@
 ## 概述
 
-**114514，还没想好写什么，先占个坑位**
+---
+
+**自己做的小网站，记录一下学习前端开发的过程。[点击跳转](https://ncgncg.top/)**
+
+
+
+**参考了不少大佬们的项目，**
+**主要内容来自Beats0大佬的[Galgame网站](https://www.mmgal.com/)，各种页面元素和动画效果都是从这拿的。甚至连图床也是蹭的，~~Steam的资源不用白不用。~~(https://github.com/Beats0/www.mygalgame.com)**
+
+**网页小组件来自dsrkafuu的[sakana-widget](https://github.com/dsrkafuu/sakana-widget)**
+
+**首先我不是小黑子，然后我花了2.5分钟抠了一张打篮球的图放到这个小组件里。~~希望不会吃律师函~~**
+
+**然后是文件快递柜来自vastsa的[FileCodeBox](https://github.com/vastsa/FileCodeBox)，我正好也是学Python的，顺便借来参考学习。~~看见那帮人把几个破文件用微信传来传去就烦~~**
+
+---
 
 ## Tree
 
-    127.0.0.1
+    ncgncg.top
     ├─Aos : 不会用，先放着
     │   ├─aos-768.css : aos(动画库)的样式表-大于768px时
     │   ├─aos.css : aos(动画库)的默认样式表
@@ -77,7 +92,7 @@
     ├─Readme.md : Readme
     └─test.jpg : 不可以涩涩
 
-## Time
+## Changelog
 
 2024-01-01 项目启动
 
@@ -104,3 +119,5 @@
 2024-03-06 修改壁纸图床，实现主题切换功能，精简项目结构
 
 2024-04-10 新增项目FileCodeBox
+
+2024-07-09 挂到Github，然后开摆
