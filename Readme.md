@@ -62,8 +62,6 @@
     │   ├─favicon.ico : 网站图标
     │   ├─logo.ico : 网站大图标(还没做好)
     │   └─transparent.png : 背景图下的透明遮罩
-    ├─L2D-2233
-    │   └─2233桌宠，还没整明白
     ├─RecyleBin
     │   └─*.* 存放没用的垃圾
     ├─Sakana-Widget
