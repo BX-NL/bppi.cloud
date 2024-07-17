@@ -7,7 +7,7 @@
         return true;
 
     } else if (ua.match(/QQ/i) == "qq") {
-        // 用QQ打开的自动下载元梦之星或地下城与勇士
+        // 用QQ打开的自动下载垃圾
         // window.location.replace("https://ymzx.qq.com/zlkdatasys/mct/d/play.shtml?device=android");
         window.location.replace("https://mdnf.qq.com/zlkdatasys/mct/d/play.shtml?device=android");
 
